@@ -5,7 +5,7 @@ import Button from '../components/Button'
 import { useTranslation } from 'react-i18next'
 
 const Header = () => {
-  const [t, i18n] = useTranslation()
+  const [t] = useTranslation()
   return (
     <div
       className=' md:h-screen screen-full md:p-28 md:pt-40 pt-40 overflow-hidden'
@@ -17,7 +17,7 @@ const Header = () => {
           exit={{ opacity: 0, x: 200 }}
           className='md:w-[50%] flex flex-col items-center ml-4 transition duration-1000'>
           <div className='md:space-x-10 md:space-y-4'>
-            <p className=' md:text-6xl text-4xl font-bold  capitalize space-y-6 space-x-10 text-[#FFCC00]'>
+            <div className=' md:text-6xl text-4xl font-bold  capitalize space-y-6 space-x-10 text-[#FFCC00]'>
               <h1 className='first-letter:text-[#E50914]'>{t('TitreHome.1')}</h1>
               <div className='flex md:space-x-5 space-x-2 space-y-6'>
                 <h1>{t('TitreHome.2')}</h1>
@@ -27,7 +27,7 @@ const Header = () => {
                 <h1>{t('TitreHome.4')}</h1>
                 <h1 className='first-letter:text-[#E50914]'>{t('TitreHome.5')}</h1>
               </div>
-            </p>
+            </div>
             <div className='flex flex-col items-center  p-4 text-white space-y-2 space-x-5 mr-10'>
               <h1 className=' capitalize md:text-base mb-5 text-slate-300 text-justify text-sm'>
                 {t('DescriptionHome')}

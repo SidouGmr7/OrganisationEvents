@@ -12,7 +12,7 @@ const About = () => {
           whileInView={{ x: 0, opacity: 1 }}
           className='w-[50%] flex flex-col items-center ml-4 transition duration-500'>
           <div>
-            <p className='text-[#E50914] font-bold uppercase text-xs relative before:absolute before:rounded-lg before:w-14 before:h-1 before:-bottom-1 before:bg-[#E50914]'>
+            <p className='text-[#E50914] font-bold uppercase text-xs relative before:absolute before:rounded-lg before:w-12 before:h-[15%] before:-bottom-1 before:bg-[#E50914]'>
               connectons-nous
             </p>
             <div className='text-[#FFCC00] capitalize text-6xl font-bold w-72 pt-4'>
@@ -24,7 +24,7 @@ const About = () => {
           animate={{ x: -200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           className='md:w-[50%] flex flex-col items-center ml-4 transition duration-1000'>
-          <p className='text-slate-300 text-justify pb-6 md:text-xl w-[70%]'>
+          <p className='text-slate-300 text-justify pb-6 md:text-xl w-[70%] font-mono'>
             DZ DIGITAL MARKETING est un fournisseur global de services de
             marketing numérique. Que vous soyez a la recherche d’une stratégie
             clé en main, création et développement de votre site un service

@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ContactMe from './pages/Contact'
 
 import Home from './pages/Home'
-import Presentation from './pages/Presentation'
+import Seminaire from './pages/Seminaire'
+import Salon from './pages/Salon';
 
 function App() {
   return (
@@ -14,10 +15,10 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/contact' element={<ContactMe />} />
-          <Route path='/seminairesnationaux' element={<Presentation />} />
-          <Route path='/seminairesinternational' element={<Presentation />} />
-          <Route path='/salonssnationaux' element={<Presentation />} />
-          <Route path='/salonsinternational' element={<Presentation />} />
+          <Route path='/seminairesnationaux' element={<Seminaire />} />
+          <Route path='/seminairesinternational' element={<Seminaire />} />
+          <Route path='/salonsnationaux' element={<Salon />} />
+          <Route path='/salonsinternational' element={<Salon />} />
         </Routes>
       </Router>
     </DarkModeProvider>

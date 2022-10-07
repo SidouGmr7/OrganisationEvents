@@ -9,11 +9,8 @@
   "titre": {
     "2": "Les Séminaires internationaux ",
     "3": "Les Séminaires nationaux ",
-    "4": "Salons internationaux ",
+    "4": "Les Salons internationaux ",
     "5": "Les Salons nationaux "
-  },
-  "p": {
-    "1": "this is a web page this is a web page this is a web page this is a web page"
   },
   "DescriptionHome": "Organisation de Séminaires et salons internationaux et nationaux",
   "Navbaritem": {
@@ -21,6 +18,9 @@
     "2": "Salons",
     "3": "Séminaires",
     "4": "Contact"
+  },
+  "p": {
+    "1": "this is a web page this is a web page this is a web page this is a web page"
   },
   "NSI1": {
     "1": "Investissement Immobilier",
@@ -41,16 +41,29 @@
     "7": "Arts du marketing touristique"
   },
   "NSI2": {
-    "1": "وطني",
-    "2": "عالمي"
+    "1": "Tourisme et artisanat algérien",
+    "2": "Artisanat et industries traditionnelles"
   },
   "Location": {
+    "N": "nationaux",
+    "I": "Internationaux",
     "1": "Dubai",
     "2": "Suisse",
     "3": "UK",
     "4": "Allemagne",
     "5": "Oran",
-    "6": "Alger"
+    "6": "Alger",
+    "7": "Tiaret",
+    "8": "Tlemcen",
+    "9": "Mascara",
+    "10": "Naama",
+    "11": "Aïn Témouchent",
+    "12": "Sidi Bel Abbès",
+    "13": "Tizi Ouzou",
+    "14": "Tipaza",
+    "15": "Bouira",
+    "16": "Médéa",
+    "17": "Blida"
   },
   "HomeSection": {
     "1": {
