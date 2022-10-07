@@ -1,0 +1,15 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #68fff1;
+  background-image: url('./images/bg3.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}
+
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

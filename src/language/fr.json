@@ -1,0 +1,73 @@
+{
+  "TitreHome": {
+    "1": "Organisation",
+    "2": "des",
+    "3": "Séminaires",
+    "4": "et",
+    "5": "salons"
+  },
+  "titre": {
+    "2": "Les Séminaires internationaux ",
+    "3": "Les Séminaires nationaux ",
+    "4": "Salons internationaux ",
+    "5": "Les Salons nationaux "
+  },
+  "p": {
+    "1": "this is a web page this is a web page this is a web page this is a web page"
+  },
+  "DescriptionHome": "Organisation de Séminaires et salons internationaux et nationaux",
+  "Navbaritem": {
+    "1": "Accueil",
+    "2": "Salons",
+    "3": "Séminaires",
+    "4": "Contact"
+  },
+  "NSI1": {
+    "1": "Investissement Immobilier",
+    "2": "Tourisme Médical",
+    "3": "Tourisme de Personnes Déterminées",
+    "4": "Technologie du Tourisme",
+    "5": "Commercialisation du Tourisme",
+    "6": "Blogueurs de Tourisme",
+    "7": "Arts du Marketing Touristique"
+  },
+  "PSI1": {
+    "1": "Investissement immobilier",
+    "2": "Tourisme médical",
+    "3": "Technologie du tourisme",
+    "4": "Commercialisation du tourisme",
+    "5": "Tourisme de personnes déterminées",
+    "6": "Blogueurs de tourisme",
+    "7": "Arts du marketing touristique"
+  },
+  "NSI2": {
+    "1": "وطني",
+    "2": "عالمي"
+  },
+  "Location": {
+    "1": "Dubai",
+    "2": "Suisse",
+    "3": "UK",
+    "4": "Allemagne",
+    "5": "Oran",
+    "6": "Alger"
+  },
+  "HomeSection": {
+    "1": {
+      "titre": "Séminaires internationaux",
+      "desc": "le marketing de la plus haute qualité pour chaque client, sur chaque projet"
+    },
+    "2": {
+      "titre": "Séminaires nationaux",
+      "desc": ""
+    },
+    "3": {
+      "titre": "Salons internationaux",
+      "desc": ""
+    },
+    "4": {
+      "titre": "Salons nationaux",
+      "desc": ""
+    }
+  }
+}
