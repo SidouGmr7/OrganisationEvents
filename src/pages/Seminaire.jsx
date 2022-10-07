@@ -1,9 +1,17 @@
 import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion'
-import BG from '../images/bg2.jpg'
 import Footer from '../components/Footer'
 import ContactMe from './Contact'
 import { useLocation } from 'react-router-dom'
+import BG from '../images/bg2.jpg'
+import Dubai from '../images/dubai.jpg'
+import Suisse from '../images/suisse.jpg'
+import Germany from '../images/Germany.jpg'
+import UK from '../images/UK.jpg'
+import Oran from '../images/Oran.jpg'
+import Alger from '../images/Alger.jpg'
+import Tizi from '../images/Tizi.JPG'
+import Blida from '../images/Blida.jpg'
 
 const Seminaire = () => {
   const [t] = useTranslation()
@@ -19,9 +27,9 @@ const Seminaire = () => {
           <img
             src={img[1]}
             alt=''
-            className='h-[50%] w-full object-cover rounded-t-full'
+            className='h-[50%] w-[80%] object-cover rounded-t-full'
           />
-          <header className='absolute text-2xl text-[#E50914] font-bold backdrop-blur-sm bg-slate-600 bg-opacity-20 rounded-full p-3 top-1/4 left-1/2 text-center -translate-x-1/2 -translate-y-1/2'>
+          <header className='absolute text-2xl text-[#E50914]  backdrop-blur-sm bg-slate-600 bg-opacity-20 rounded-full p-3 top-1/4 left-1/2 text-center -translate-x-1/2 -translate-y-1/2'>
             {titre[1]}
           </header>
           <p className='text-[#FFCC00] text-lg text-center backdrop-blur-sm bg-slate-600 bg-opacity-20 rounded-full p-4'>
@@ -33,8 +41,8 @@ const Seminaire = () => {
           whileInView={{ y: 0, opacity: 1 }}
           className='p-10 transition duration-1000'>
           <div className='relative'>
-            <img src={img[0]} alt='' className='rounded-full scale-110' />
-            <h1 className='absolute text-2xl text-[#E50914] font-bold backdrop-blur-sm bg-slate-600 bg-opacity-20 rounded-full p-3 top-1/2 left-1/2 text-center -translate-x-1/2 -translate-y-1/2'>
+            <img src={img[0]} alt='' className='hover:blur-[1px] blur-none transition-all duration-500 rounded-full scale-110' />
+            <h1 className='absolute text-2xl text-[#E50914]  backdrop-blur-sm bg-slate-600 bg-opacity-20 rounded-full p-3 top-1/2 left-1/2 text-center -translate-x-1/2 -translate-y-1/2'>
               {titre[0]}
             </h1>
           </div>
@@ -47,9 +55,9 @@ const Seminaire = () => {
             <img
               src={img[2]}
               alt=''
-              className='h-[50%] w-full object-cover rounded-t-full'
+              className='h-[50%] w-[80%] object-cover rounded-t-full'
             />
-            <header className='absolute text-2xl text-[#E50914] font-bold backdrop-blur-sm bg-slate-600 bg-opacity-20 rounded-full p-3 top-1/4 left-1/2 text-center -translate-x-1/2 -translate-y-1/2'>
+            <header className='absolute text-2xl text-[#E50914] backdrop-blur-sm bg-slate-600 bg-opacity-20 rounded-full p-3 top-1/4 left-1/2 text-center -translate-x-1/2 -translate-y-1/2'>
               {titre[2]}
             </header>
             <p className='text-[#FFCC00] text-lg text-center backdrop-blur-sm bg-slate-600 bg-opacity-20 rounded-full p-4'>
@@ -73,7 +81,7 @@ const Seminaire = () => {
       </motion.div>
       <div className='overflow-hidden scrollbar-hide  bg-slate-900 p-20'>
         <Section
-          img={[Path === '/seminairesinternational' ? BG : BG, BG, BG]}
+          img={[Path === '/seminairesinternational' ? Dubai : Oran, BG, BG]}
           titre={[
             Path === '/seminairesinternational'
               ? t('Location.1')
@@ -84,7 +92,7 @@ const Seminaire = () => {
           desc={[t('PSI1.1'), t('PSI1.2')]}
         />
         <Section
-          img={[Path === '/seminairesinternational' ? BG : BG, BG, BG]}
+          img={[Path === '/seminairesinternational' ? Suisse : Alger, BG, BG]}
           titre={[
             Path === '/seminairesinternational'
               ? t('Location.2')
@@ -95,7 +103,7 @@ const Seminaire = () => {
           desc={[t('PSI1.1'), t('PSI1.2')]}
         />
         <Section
-          img={[Path === '/seminairesinternational' ? BG : BG, BG]}
+          img={[Path === '/seminairesinternational' ? UK : Oran, BG]}
           titre={[
             Path === '/seminairesinternational'
               ? t('Location.3')
@@ -105,7 +113,7 @@ const Seminaire = () => {
           desc={[t('PSI1.1'), t('PSI1.2')]}
         />
         <Section
-          img={[Path === '/seminairesinternational' ? BG : BG, BG, BG]}
+          img={[Path === '/seminairesinternational' ? Germany : Alger, BG, BG]}
           titre={[
             Path === '/seminairesinternational'
               ? t('Location.4')
