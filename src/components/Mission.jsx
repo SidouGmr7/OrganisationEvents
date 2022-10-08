@@ -1,18 +1,23 @@
 import { motion } from 'framer-motion'
-import BG from '../images/bg2.jpg'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
+import SemitaireI from '../images/SemitaireI.jpg'
+import SemitaireN from '../images/SemitaireN.jpg'
+import SalonN from '../images/SalonN.jpg'
+import SalonI from '../images/SalonI.JPG'
 
 function Mission() {
   const [t] = useTranslation()
-  const Section = ({ titre, desc, image, style , location }) => {
+  const Section = ({ titre, desc, image, style, location }) => {
     return (
-      <div className={`md:flex ${style} md:items-center`}>
+      <div className={`p-4 md:flex ${style} md:items-center`}>
         <motion.div
           animate={{ x: -200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           className='md:w-[50%] flex flex-col items-center transition duration-1000'>
-          <Link to={location} className='visible md:invisible text-[#E50914] font-bold uppercase text-3xl relative before:absolute before:rounded-lg before:w-14 before:h-1 before:-bottom-1 before:bg-[#E50914] mb-10'>
+          <Link
+            to={location}
+            className='visible md:invisible text-[#E50914] font-bold uppercase text-3xl relative before:absolute before:rounded-lg before:w-14 before:h-1 before:-bottom-1 before:bg-[#E50914] mb-10'>
             {titre}
           </Link>
           <Link to={location}>
@@ -31,7 +36,9 @@ function Mission() {
           whileInView={{ x: 0, opacity: 1 }}
           className='invisible md:visible md:w-[50%] flex flex-col items-center ml-4 transition duration-500'>
           <div className=' md:flex md:flex-col items-center text-center md:gap-6'>
-            <Link to={location} className='md:text-[#E50914] font-bold uppercase text-3xl relative before:absolute before:rounded-lg before:w-14 before:h-1 before:-bottom-1 before:bg-[#E50914]'>
+            <Link
+              to={location}
+              className='md:text-[#E50914] font-bold uppercase text-3xl relative before:absolute before:rounded-lg before:w-14 before:h-1 before:-bottom-1 before:bg-[#E50914]'>
               {titre}
             </Link>
             <div className=' text-[#FFCC00] capitalize text-2xl md:w-[60%] font-bold space-y-4'>
@@ -43,40 +50,37 @@ function Mission() {
     )
   }
   return (
-    <div className='overflow-hidden scrollbar-hide  bg-slate-900 pb-20'>
-      <p className='uppercase text-slate-300  text-2xl md:text-4xl font-bold text-center pt-4 relative before:absolute before:rounded-lg before:w-20 before:h-1 before:-bottom-3 before:bg-slate-300'>
-        Les Séminaires et Les Salons
+    <div className='relative overflow-hidden scrollbar-hide  bg-slate-900 pb-20 pt-20' id='mission'>
+      <p className='uppercase text-slate-300  text-2xl md:text-4xl font-bold text-center pt-4 relative before:absolute before:rounded-lg before:w-20 before:h-1 before:-bottom-1 before:bg-slate-300'>
+        {t('mission.titre')}
       </p>
       <Section
         titre={t('HomeSection.1.titre')}
         desc={t('HomeSection.1.desc')}
-        image={BG}
+        image={SemitaireI}
         style='md:flex-row'
         location='seminairesinternational'
       />
       <Section
         titre={t('HomeSection.2.titre')}
         desc={t('HomeSection.2.desc')}
-        image={BG}
+        image={SemitaireN}
         style='md:flex-row-reverse'
         location='seminairesnationaux'
-
       />
       <Section
         titre={t('HomeSection.3.titre')}
         desc={t('HomeSection.3.desc')}
-        image={BG}
+        image={SalonI}
         style='md:flex-row'
         location='salonsinternational'
-
       />
       <Section
         titre={t('HomeSection.4.titre')}
         desc={t('HomeSection.4.desc')}
-        image={BG}
+        image={SalonN}
         style='md:flex-row-reverse'
         location='salonsnationaux'
-
       />
     </div>
   )

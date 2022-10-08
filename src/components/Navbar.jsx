@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import NavbarItem from '../components/NavbarItem'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import LN from "../images/LogoName.PNG";
 
 const Navbar = () => {
   const [Langue, setLangue] = useState('fr')
@@ -24,9 +25,9 @@ const Navbar = () => {
           <div className='flex items-center gap-2'>
             <div className='md:text-xl'>
               <img
-                src='https://digitalmarketingdz.com/wp-content/uploads/2022/09/new-logo-blanc-02.png'
+                src={LN}
                 alt='Logo'
-                className='w-40 ml-10'
+                className='w-[50%] ml-10'
               />
             </div>
           </div>

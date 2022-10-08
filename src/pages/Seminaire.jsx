@@ -10,8 +10,6 @@ import Germany from '../images/Germany.jpg'
 import UK from '../images/UK.jpg'
 import Oran from '../images/Oran.jpg'
 import Alger from '../images/Alger.jpg'
-import Tizi from '../images/Tizi.JPG'
-import Blida from '../images/Blida.jpg'
 
 const Seminaire = () => {
   const [t] = useTranslation()
@@ -41,7 +39,11 @@ const Seminaire = () => {
           whileInView={{ y: 0, opacity: 1 }}
           className='p-10 transition duration-1000'>
           <div className='relative'>
-            <img src={img[0]} alt='' className='hover:blur-[1px] blur-none transition-all duration-500 rounded-full scale-110' />
+            <img
+              src={img[0]}
+              alt=''
+              className='hover:blur-[1px] blur-none transition-all duration-500 rounded-full scale-110'
+            />
             <h1 className='absolute text-2xl text-[#E50914]  backdrop-blur-sm bg-slate-600 bg-opacity-20 rounded-full p-3 top-1/2 left-1/2 text-center -translate-x-1/2 -translate-y-1/2'>
               {titre[0]}
             </h1>

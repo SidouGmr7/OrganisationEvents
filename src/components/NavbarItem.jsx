@@ -44,11 +44,11 @@ const NavbarItem = ({ Selector, Name, Dropdown, N, I }) => {
         )}
         {/* DropMenu*/}
         {menu && (
-          <div className='w-80 backdrop-blur-lg bg-slate-600 bg-opacity-20 shadow-xl rounded-lg flex flex-col absolute top-14 -right-24 transition-all'>
+          <div className='w-96 backdrop-blur-lg bg-slate-600 bg-opacity-20 shadow-xl rounded-lg flex flex-col absolute top-14 -right-24 transition-all'>
             <Link
               to={Selector + 'nationaux'}
               onClick={() => setmenu(false)}
-              className='font-medium py-3 px-[40%] text-sm hover:bg-slate-700 rounded-lg hover:bg-opacity-30 transition-all text-slate-400 hover:text-[#E50914]'>
+              className='font-bold py-3 px-[40%] text-sm hover:bg-slate-700  rounded-lg hover:bg-opacity-30 transition-all text-slate-400 hover:text-[#E50914]'>
               {t('Location.N')}
             </Link>
             <ul
@@ -59,7 +59,7 @@ const NavbarItem = ({ Selector, Name, Dropdown, N, I }) => {
                   <Link
                     to={Selector + 'nationaux'}
                     onClick={() => setmenu(false)}>
-                    <li className='py-2 px-4 hover:bg-slate-700 rounded-lg hover:bg-opacity-30  transition-all text-slate-100 hover:text-[#FFCC00]'>
+                    <li className='py-2 px-5 hover:bg-slate-700 rounded-lg hover:bg-opacity-30  transition-all text-slate-100 hover:text-[#FFCC00]'>
                       {data}
                     </li>
                   </Link>
@@ -69,7 +69,7 @@ const NavbarItem = ({ Selector, Name, Dropdown, N, I }) => {
             <Link
               to={Selector + 'international'}
               onClick={() => setmenu(false)}
-              className='font-medium py-3 px-[40%] text-sm hover:bg-slate-700 rounded-lg hover:bg-opacity-30  transition-all text-slate-400 hover:text-[#E50914]'>
+              className='font-bold py-3 px-[40%] text-sm hover:bg-slate-700 rounded-lg hover:bg-opacity-30  transition-all text-slate-400 hover:text-[#E50914]'>
               {t('Location.I')}
             </Link>
             <ul
@@ -82,7 +82,7 @@ const NavbarItem = ({ Selector, Name, Dropdown, N, I }) => {
                   <Link
                     to={Selector + 'international'}
                     onClick={() => setmenu(false)}>
-                    <li className='py-2 px-4 hover:bg-slate-700 rounded-lg hover:bg-opacity-30  transition-all text-slate-100 hover:text-[#FFCC00]'>
+                    <li className='py-2 px-6 hover:bg-slate-700 rounded-lg hover:bg-opacity-30  transition-all text-slate-100 hover:text-[#FFCC00]'>
                       {data}
                     </li>
                   </Link>

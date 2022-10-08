@@ -19,15 +19,24 @@
     "3": "Séminaires",
     "4": "Contact"
   },
-  "p": {
-    "1": "this is a web page this is a web page this is a web page this is a web page"
+  "about": {
+    "company": "Harvest Caravane",
+    "contact": "connectons-nous",
+    "propre": "à Propre Nous",
+    "desc": {
+      "1": "La Société Algérienne des Expositions et est l'organisateur et le pionnier de l'organisation d'événements économiques en Algérie. ",
+      "2": "La Harvest Caravane a joué un rôle important dans l'organisation d'expositions et la création de salons spécialisés par sa contribution au développement des professions et de l'artisanat lors d'occasions de démonstration. Elle contribue également à la promotion des exportations en organisant la participation algérienne à diverses expositions et salons organisés à l'étranger, incarnant ainsi la efforts de l'État pour encourager la production nationale et l'exportation à l'étranger."
+    }
+  },
+  "mission": {
+    "titre": "Les Séminaires et Les Salons"
   },
   "NSI1": {
     "1": "Investissement Immobilier",
     "2": "Tourisme Médical",
     "3": "Tourisme de Personnes Déterminées",
     "4": "Technologie du Tourisme",
-    "5": "Commercialisation du Tourisme",
+    "5": "Commerce International du Tourisme",
     "6": "Blogueurs de Tourisme",
     "7": "Arts du Marketing Touristique"
   },
@@ -35,7 +44,7 @@
     "1": "Investissement immobilier",
     "2": "Tourisme médical",
     "3": "Technologie du tourisme",
-    "4": "Commercialisation du tourisme",
+    "4": "Commerce International du tourisme",
     "5": "Tourisme de personnes déterminées",
     "6": "Blogueurs de tourisme",
     "7": "Arts du marketing touristique"

@@ -5,8 +5,7 @@ body {
   background-image: url('./images/bg3.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
-}
+  background-position: center;}
 
 /* ./src/index.css */
 @tailwind base;
