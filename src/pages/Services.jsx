@@ -15,7 +15,7 @@ const Services = () => {
           <motion.div
             animate={{ x: 200, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            className='flex flex-col items-center backdrop-blur-lg w-[70%] mx-auto  bg-slate-600 bg-opacity-20 shadow-xl p-4 rounded-3xl md:border-l-8 border-l-4 md:hover:scale-105 transition-all duration-500 border-[#FFCC00]'>
+            className='flex flex-col items-center backdrop-blur-lg w-[70%] md:w-full mx-auto  bg-slate-600 bg-opacity-20 shadow-xl p-4 rounded-3xl md:border-l-8 border-l-4 md:hover:scale-105 transition-all duration-500 border-[#FFCC00]'>
             <AiFillAliwangwang className='text-6xl text-[#FFCC00]' />
             <header className='mt-4 text-[#FFCC00] text-xl'>rapide</header>
             <p className='text-center mt-10 text-zinc-300'>
@@ -26,7 +26,7 @@ const Services = () => {
           <motion.div
             animate={{ x: 200, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            className='flex flex-col items-center backdrop-blur-lg w-[70%] mx-auto bg-slate-600 bg-opacity-20 shadow-xl p-4 rounded-3xl md:border-l-8 border-l-4 hover:scale-105 transition-all duration-500 border-[#FFCC00]'>
+            className='flex flex-col items-center backdrop-blur-lg w-[70%] md:w-full mx-auto bg-slate-600 bg-opacity-20 shadow-xl p-4 rounded-3xl md:border-l-8 border-l-4 hover:scale-105 transition-all duration-500 border-[#FFCC00]'>
             <AiFillAliwangwang className='text-6xl text-[#FFCC00]' />
             <header className='mt-4 text-[#FFCC00] text-xl'>rapide</header>
             <p className='text-center mt-10 text-zinc-300'>
@@ -37,7 +37,7 @@ const Services = () => {
           <motion.div
             animate={{ x: 200, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            className='flex flex-col items-center backdrop-blur-lg w-[70%] mx-auto bg-slate-600 bg-opacity-20 shadow-xl p-4 rounded-3xl md:border-l-8 border-l-4 hover:scale-105 transition-all duration-500 border-[#FFCC00]'>
+            className='flex flex-col items-center backdrop-blur-lg w-[70%] md:w-full mx-auto bg-slate-600 bg-opacity-20 shadow-xl p-4 rounded-3xl md:border-l-8 border-l-4 hover:scale-105 transition-all duration-500 border-[#FFCC00]'>
             <AiFillAliwangwang className='text-6xl text-[#FFCC00]' />
             <header className='mt-4 text-[#FFCC00] text-xl'>rapide</header>
             <p className='text-center mt-10 text-zinc-300'>

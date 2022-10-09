@@ -37,7 +37,7 @@ const Navbar = () => {
             initial={{ opacity: 0, x: 200 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 200 }}
-            className='flex md:flex-row flex-col items-center mx-auto mt-10 gap-10'>
+            className='flex md:flex-row flex-col items-center mx-auto md:mt-0 mt-10 gap-10'>
             <NavbarItem
               Name={t('Navbaritem.1')}
               Selector='/'
@@ -57,7 +57,16 @@ const Navbar = () => {
               N={Seminaires}
               I={Seminaires}
             />
-
+            <NavbarItem
+              Name={t('Navbaritem.4')}
+              Selector='#contact'
+              Dropdown={false}
+            />
+            <NavbarItem
+              Name={t('Navbaritem.5')}
+              Selector='#agenda'
+              Dropdown={false}
+            />
             <button
               className='uppercase text-[#FFCC00] font-bold hover:text-[#E50914]'
               onClick={() => {

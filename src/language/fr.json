@@ -17,7 +17,8 @@
     "1": "Accueil",
     "2": "Salons",
     "3": "Séminaires",
-    "4": "Contact"
+    "4": "Contact",
+    "5": "Agenda"
   },
   "about": {
     "company": "Harvest Caravane",
@@ -107,5 +108,10 @@
       "titre": "",
       "desc": ""
     }
+  },
+  "agenda" : {
+    "1" : "Selectionner une Date",
+    "2" : "Evenement Indisponible",
+    "3" : ""
   }
 }

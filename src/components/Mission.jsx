@@ -11,7 +11,7 @@ function Mission() {
   const Section = ({ titre, desc, image, style, location }) => {
     return (
       <div
-        className={`md:p-20 p-14 md:-mb-44 -mb-96 md:flex ${style} md:items-center`}>
+        className={`md:p-28 p-14 md:-mb-0 -mb-96 md:gap-20 md:flex ${style} md:items-center`}>
         <motion.div
           animate={{ x: -200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -20,7 +20,7 @@ function Mission() {
             <img
               src={image}
               alt=''
-              className='rounded-full scale-125 opacity-80 hover:opacity-100 transition-all duration-500 mb-32'
+              className='rounded-full scale-125 opacity-80 hover:opacity-100 transition-all duration-500 md:mb-0 mb-32'
             />
             <Link
               to={location}
@@ -28,14 +28,14 @@ function Mission() {
               {titre}
             </Link>
           </Link>
-          <div className='visible md:invisible text-center  -mt-16  text-[#FFCC00] p-4 bg-slate-700 bg-opacity-30 rounded-[20%] capitalize font-bold '>
+          <div className='flex md:hidden text-center -mt-16  text-[#FFCC00] p-4 bg-slate-700 bg-opacity-30 rounded-[20%] capitalize font-bold '>
             <p className='pl-3'>{desc}</p>
           </div>
         </motion.div>
         <motion.div
           animate={{ x: 200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          className='invisible md:visible md:w-[60%] flex flex-col items-center ml-4 transition duration-500'>
+          className='md:flex flex-col hidden md:w-[60%] items-center transition duration-500'>
           <div className=' md:flex md:flex-col items-center text-center md:gap-6'>
             <Link
               to={location}
@@ -54,7 +54,7 @@ function Mission() {
     <div
       className='relative overflow-hidden scrollbar-hide bg-slate-900 bg-opacity-95 py-20'
       id='mission'>
-      <p className='uppercase text-slate-300  text-2xl md:text-4xl font-bold text-center pt-4 relative before:absolute before:rounded-lg before:w-20 before:h-1 before:-bottom-1 before:bg-slate-300'>
+      <p className='uppercase text-slate-300  text-2xl md:text-4xl font-bold text-center pt-4 md:mb-10 relative before:absolute before:rounded-lg before:w-20 before:h-1 before:-bottom-1 before:bg-slate-300'>
         {t('mission.titre')}
       </p>
       <Section

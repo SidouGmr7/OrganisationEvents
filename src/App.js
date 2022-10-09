@@ -2,10 +2,9 @@ import { DarkModeProvider } from './context/DarkMode'
 import Navbar from './components/Navbar'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ContactMe from './pages/Contact'
-
 import Home from './pages/Home'
 import Seminaire from './pages/Seminaire'
-import Salon from './pages/Salon';
+import Salon from './pages/Salon'
 
 function App() {
   return (
