@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import NavbarItem from '../components/NavbarItem'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import LN from '../images/Logo.png'
+import LN from '../images/logo.png'
 
 const Navbar = () => {
   const [Langue, setLangue] = useState('fr')

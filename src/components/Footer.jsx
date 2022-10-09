@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import LN from '../images/Logo.png'
+import LN from '../images/logo.png'
 import {
   FaInstagram,
   FaFacebook,
