@@ -22,6 +22,7 @@
   "about": {
     "company": "Harvest Caravane",
     "contact": "connectons-nous",
+    "contactp": "Vous cherchez un partenaire pour organiser des salons ou des conférences ?",
     "propre": "à Propre Nous",
     "desc": {
       "1": "La Société Algérienne des Expositions et est l'organisateur et le pionnier de l'organisation d'événements économiques en Algérie. ",
@@ -77,18 +78,33 @@
   "HomeSection": {
     "1": {
       "titre": "Séminaires internationaux",
-      "desc": "le marketing de la plus haute qualité pour chaque client, sur chaque projet"
+      "desc": "Plusieurs conférences internationales sur les investissements, le tourisme et les arts du marketing dans diverses régions du monde (Dubaï, Suisse, Allemagne, UK)"
     },
     "2": {
       "titre": "Séminaires nationaux",
-      "desc": ""
+      "desc": "Plusieurs conférences nationales sur les investissements, le tourisme et les arts du marketing dans les différents états d'Algérie (Oran, Alger)"
     },
     "3": {
       "titre": "Salons internationaux",
-      "desc": ""
+      "desc": "Plusieurs salons internationales sur le tourisme et l'artisanat algérien dans diverses régions du monde (Dubaï, Suisse, Allemagne, UK)"
     },
     "4": {
       "titre": "Salons nationaux",
+      "desc": "Plusieurs foires nationales de l'artisanat et industries traditionnelles dans différents états d'Algérie (Oran, Alger, Blida, Tizi Ouzou.....)"
+    }
+  },
+  "service": {
+    "titre": "خدماتنا",
+    "1": {
+      "titre": "",
+      "desc": ""
+    },
+    "2": {
+      "titre": "",
+      "desc": ""
+    },
+    "3": {
+      "titre": "",
       "desc": ""
     }
   }

@@ -3,6 +3,7 @@ import Scroll from '../components/Scroll'
 import { motion } from 'framer-motion'
 import Button from '../components/Button'
 import { useTranslation } from 'react-i18next'
+import BG from '../images/meeting.png'
 
 const Header = () => {
   const [t] = useTranslation()
@@ -18,14 +19,20 @@ const Header = () => {
           className='md:w-[50%] flex flex-col items-center ml-4 transition duration-1000'>
           <div className='md:space-x-10 md:space-y-4'>
             <div className=' md:text-6xl text-4xl font-bold  capitalize space-y-6 space-x-10 text-[#FFCC00]'>
-              <h1 className='first-letter:text-[#E50914]'>{t('TitreHome.1')}</h1>
+              <h1 className='first-letter:text-[#E50914]'>
+                {t('TitreHome.1')}
+              </h1>
               <div className='flex md:space-x-5 space-x-2 space-y-6'>
                 <h1>{t('TitreHome.2')}</h1>
-                <h1 className='first-letter:text-[#E50914]'>{t('TitreHome.3')}</h1>
+                <h1 className='first-letter:text-[#E50914]'>
+                  {t('TitreHome.3')}
+                </h1>
               </div>
               <div className='flex md:space-x-5 space-x-2 space-y-4 pl-12'>
                 <h1>{t('TitreHome.4')}</h1>
-                <h1 className='first-letter:text-[#E50914]'>{t('TitreHome.5')}</h1>
+                <h1 className='first-letter:text-[#E50914]'>
+                  {t('TitreHome.5')}
+                </h1>
               </div>
             </div>
             <div className='flex flex-col items-center  p-4 text-white space-y-2 space-x-5 mr-10'>
@@ -46,8 +53,8 @@ const Header = () => {
           exit={{ opacity: 0, x: 200 }}
           className='md:w-[50%] transition duration-1000'>
           <img
-            src='https://digitalmarketingdz.com/wp-content/uploads/2022/09/home-01-01-01-01-1024x1024.png'
-            alt='Développement site web'
+            src={BG}
+            alt=''
             loading='lazy'
             className='w-[70%] animate-[bounce_4s_ease-in-out_infinite] md:ml-20 ml-16 md:mt-10 mt-10 '
           />

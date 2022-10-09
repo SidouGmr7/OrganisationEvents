@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import NavbarItem from '../components/NavbarItem'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import LN from "../images/LogoName.PNG";
+import LN from '../images/Logo.png'
 
 const Navbar = () => {
   const [Langue, setLangue] = useState('fr')
@@ -21,16 +21,8 @@ const Navbar = () => {
   return (
     <header className='fixed z-50 w-screen bg-slate-800 bg-opacity-30 backdrop-blur-sm p-1 '>
       <div className='md:flex w-full h-full items-center justify-between'>
-        <div className='flex items-center justify-center'>
-          <div className='flex items-center gap-2'>
-            <div className='md:text-xl'>
-              <img
-                src={LN}
-                alt='Logo'
-                className='w-[50%] ml-10'
-              />
-            </div>
-          </div>
+        <div className='w-[12%] ml-3'>
+          <img src={LN} alt='Logo' />
         </div>
         <div className='md:flex hidden items-center gap-8 mr-14'>
           <motion.ul

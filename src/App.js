@@ -15,10 +15,10 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/contact' element={<ContactMe />} />
-          <Route path='/seminairesnationaux' element={<Seminaire />} />
           <Route path='/seminairesinternational' element={<Seminaire />} />
-          <Route path='/salonsnationaux' element={<Salon />} />
+          <Route path='/seminairesnationaux' element={<Seminaire />} />
           <Route path='/salonsinternational' element={<Salon />} />
+          <Route path='/salonsnationaux' element={<Salon />} />
         </Routes>
       </Router>
     </DarkModeProvider>

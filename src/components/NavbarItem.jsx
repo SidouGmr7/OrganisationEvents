@@ -36,7 +36,7 @@ const NavbarItem = ({ Selector, Name, Dropdown, N, I }) => {
         ) : (
           <Link
             to={Selector}
-            className={`text-lg hover:scale-110 transition cursor-pointer hover:text-[#FFCC00] font-mono text-slate-50 ${
+            className={`flex items-center text-lg hover:scale-110 transition cursor-pointer hover:text-[#FFCC00] font-mono text-slate-50 ${
               Selector === '/' && Path == '/' ? underline : ''
             }`}>
             {Name}

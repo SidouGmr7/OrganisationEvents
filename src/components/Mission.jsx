@@ -10,38 +10,39 @@ function Mission() {
   const [t] = useTranslation()
   const Section = ({ titre, desc, image, style, location }) => {
     return (
-      <div className={`p-4 md:flex ${style} md:items-center`}>
+      <div
+        className={`md:p-20 p-14 md:-mb-44 -mb-96 md:flex ${style} md:items-center`}>
         <motion.div
           animate={{ x: -200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           className='md:w-[50%] flex flex-col items-center transition duration-1000'>
-          <Link
-            to={location}
-            className='visible md:invisible text-[#E50914] font-bold uppercase text-3xl relative before:absolute before:rounded-lg before:w-14 before:h-1 before:-bottom-1 before:bg-[#E50914] mb-10'>
-            {titre}
-          </Link>
-          <Link to={location}>
+          <Link to={location} className='relative'>
             <img
               src={image}
               alt=''
-              className='rounded-full opacity-70 md:mb-32'
+              className='rounded-full scale-125 opacity-80 hover:opacity-100 transition-all duration-500 mb-32'
             />
+            <Link
+              to={location}
+              className='absolute top-1/4 left-[3%] bg-slate-700 bg-opacity-30 backdrop-blur-sm p-1 rounded-full visible md:invisible text-[#E50914] font-bold uppercase text-xl'>
+              {titre}
+            </Link>
           </Link>
-          <div className='visible md:invisible z-20 -mt-48 ml-4 text-[#FFCC00] bg-slate-700 bg-opacity-30 rounded-full py-6 capitalize w-[60%] font-semibold space-y-4'>
+          <div className='visible md:invisible text-center  -mt-16  text-[#FFCC00] p-4 bg-slate-700 bg-opacity-30 rounded-[20%] capitalize font-bold '>
             <p className='pl-3'>{desc}</p>
           </div>
         </motion.div>
         <motion.div
           animate={{ x: 200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          className='invisible md:visible md:w-[50%] flex flex-col items-center ml-4 transition duration-500'>
+          className='invisible md:visible md:w-[60%] flex flex-col items-center ml-4 transition duration-500'>
           <div className=' md:flex md:flex-col items-center text-center md:gap-6'>
             <Link
               to={location}
               className='md:text-[#E50914] font-bold uppercase text-3xl relative before:absolute before:rounded-lg before:w-14 before:h-1 before:-bottom-1 before:bg-[#E50914]'>
               {titre}
             </Link>
-            <div className=' text-[#FFCC00] capitalize text-2xl md:w-[60%] font-bold space-y-4'>
+            <div className=' text-[#FFCC00] text-center capitalize text-2xl md:w-[60%] font-bold space-y-4'>
               {desc}
             </div>
           </div>
@@ -50,7 +51,9 @@ function Mission() {
     )
   }
   return (
-    <div className='relative overflow-hidden scrollbar-hide  bg-slate-900 pb-20 pt-20' id='mission'>
+    <div
+      className='relative overflow-hidden scrollbar-hide bg-slate-900 bg-opacity-95 py-20'
+      id='mission'>
       <p className='uppercase text-slate-300  text-2xl md:text-4xl font-bold text-center pt-4 relative before:absolute before:rounded-lg before:w-20 before:h-1 before:-bottom-1 before:bg-slate-300'>
         {t('mission.titre')}
       </p>
