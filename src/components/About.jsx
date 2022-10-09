@@ -35,10 +35,10 @@ const About = () => {
           whileInView={{ x: 0, opacity: 1 }}
           className='md:w-[50%] flex flex-col items-center md:ml-4 -mt-36 md:mt-0 transition duration-1000'>
           <p
-            className={`text-[#FFCC00] font-bold  pb-6 md:text-xl text-md text-justify w-[82%]  ${
+            className={`text-[#FFCC00] font-bold  pb-6 md:text-xl text-sm text-justify w-[82%]  ${
               i18n.language === 'ar' && 'text-end'
             }   `}>
-            {t('about.desc.1')} <br />
+            {t('about.desc.1')} <br/><br/>
             {t('about.desc.2')}
           </p>
           <Button

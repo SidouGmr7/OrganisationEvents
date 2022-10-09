@@ -17,9 +17,13 @@ const NavbarItem = ({ Selector, Name, Dropdown, N, I }) => {
       <li className='relative'>
         {Dropdown ? (
           <button
+            onMouseEnter={() => {
+              setmenu(true)
+            }}
             onClick={() => {
               setmenu((prevStat) => !prevStat)
             }}
+           
             className={`flex items-center text-lg hover:scale-110 transition cursor-pointer hover:text-[#FFCC00] font-mono text-slate-50 ${
               (Selector === 'salons' &&
                 (Path == '/salonsnationaux' ||
@@ -59,7 +63,7 @@ const NavbarItem = ({ Selector, Name, Dropdown, N, I }) => {
                   <Link
                     to={Selector + 'nationaux'}
                     onClick={() => setmenu(false)}>
-                    <li className='py-2 px-5 hover:bg-slate-700 rounded-lg hover:bg-opacity-30 md:text-md text-xs  transition-all text-slate-100 hover:text-[#FFCC00]'>
+                    <li className='py-2 px-5 hover:bg-slate-700 rounded-lg hover:bg-opacity-30 md:text-md text-xs transition-all text-slate-100 hover:text-[#FFCC00]'>
                       {data}
                     </li>
                   </Link>
@@ -82,7 +86,7 @@ const NavbarItem = ({ Selector, Name, Dropdown, N, I }) => {
                   <Link
                     to={Selector + 'international'}
                     onClick={() => setmenu(false)}>
-                    <li className='py-2 px-6 hover:bg-slate-700 rounded-lg hover:bg-opacity-30 md:text-md text-xs transition-all text-slate-100 hover:text-[#FFCC00]'>
+                    <li className='py-2 px-6 hover:bg-slate-700 rounded-lg hover:bg-opacity-30 md:text-md text-xs  transition-all text-slate-100 hover:text-[#FFCC00]'>
                       {data}
                     </li>
                   </Link>

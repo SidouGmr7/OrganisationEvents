@@ -22,13 +22,26 @@ const Navbar = () => {
   return (
     <header className='fixed z-50 w-screen bg-slate-800 bg-opacity-30 backdrop-blur-sm p-1 '>
       <div className='md:flex items-center md:justify-between'>
-        <div className='md:w-[12%] w-[40%] md:ml-3 md:mx-auto'>
+        <div className='md:w-[12%] w-[40%] md:ml-3 mx-auto'>
           <img src={LN} alt='Logo' />
         </div>
         <AiOutlineBars
-          className='ml-auto -mt-10 mb-4  text-[2rem] visible md:invisible text-slate-50'
+          className='ml-auto -mt-10  text-[2rem] flex md:hidden text-[#FFCC00]'
           onClick={() => setColapse((prevStat) => !prevStat)}
         />
+        <button
+          className='uppercase -mt-10 text-[2rem] flex md:hidden text-[#FFCC00] '
+          onClick={() => {
+            if (Langue === 'fr') {
+              setLangue('ar')
+              i18n.changeLanguage('ar')
+            } else {
+              setLangue('fr')
+              i18n.changeLanguage('fr')
+            }
+          }}>
+          {Langue}
+        </button>
         <div
           className={`md:flex ${
             Colapse ? 'flex' : 'hidden'
@@ -44,18 +57,18 @@ const Navbar = () => {
               Dropdown={false}
             />
             <NavbarItem
-              Name={t('Navbaritem.2')}
-              Selector='salons'
-              Dropdown={true}
-              N={SalonsN}
-              I={SalonsI}
-            />
-            <NavbarItem
               Name={t('Navbaritem.3')}
               Selector='seminaires'
               Dropdown={true}
               N={Seminaires}
               I={Seminaires}
+            />
+            <NavbarItem
+              Name={t('Navbaritem.2')}
+              Selector='salons'
+              Dropdown={true}
+              N={SalonsN}
+              I={SalonsI}
             />
             <NavbarItem
               Name={t('Navbaritem.4')}
@@ -68,7 +81,7 @@ const Navbar = () => {
               Dropdown={false}
             />
             <button
-              className='uppercase text-[#FFCC00] font-bold hover:text-[#E50914]'
+              className='hidden md:flex uppercase text-[#FFCC00] font-bold hover:text-[#E50914]'
               onClick={() => {
                 if (Langue === 'fr') {
                   setLangue('ar')

@@ -16,10 +16,10 @@ export const Agenda = () => {
 
   const Event = ({ Name, BG }) => {
     return (
-      <div className='w-[50%] mt-20'>
+      <div className='md:w-[50%] md:mt-20'>
         <div className='relative'>
           <img src={BG} alt='event' className=' rounded-full' />
-          <p className='absolute top-1/2 right-1/4 p-5 text-2xl max-w-md text-[#FFCC00] bg-slate-600 bg-opacity-80 backdrop-blur-xs rounded-full capitalize first-letter:text-[#E50914]'>
+          <p className='absolute top-1/2 right-1/4 md:p-5 p-2 md:text-2xl text-md max-w-md text-[#FFCC00] bg-slate-600 bg-opacity-80 backdrop-blur-xs rounded-full  capitalize first-letter:text-[#E50914]'>
             {Name}
           </p>
         </div>
@@ -57,11 +57,11 @@ export const Agenda = () => {
         <p className='uppercase text-slate-300 text-2xl md:text-4xl font-bold text-center  md:mb-10 relative before:absolute before:rounded-lg before:w-10 before:h-1 before:-bottom-1 before:bg-slate-300'>
           {t('Navbaritem.5')}
         </p>
-        <div className='flex flex-row gap-10'>
+        <div className='flex md:flex-row flex-col gap-10'>
           <Calendar
             onChange={onChange}
             value={date}
-            className='text-[#FFCC00] text-2xl items-center flex flex-col justify-center font-bold bg-slate-200 bg-opacity-20 backdrop-blur-md p-10 w-[50%] rounded-[10%]'
+            className='text-[#FFCC00] md:text-2xl items-center flex md:leading-6 leading-4 flex-col justify-center font-bold bg-slate-900 bg-opacity-80 backdrop-blur-sm md:p-6 p-2 w-[50%] rounded-[10%]'
           />
           <Event Name={name} BG={BG1} />
         </div>
