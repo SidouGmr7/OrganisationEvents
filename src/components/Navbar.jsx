@@ -3,6 +3,7 @@ import NavbarItem from '../components/NavbarItem'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import LN from '../images/Logo.png'
+import { AiOutlineBars } from 'react-icons/ai'
 
 const Navbar = () => {
   const [Langue, setLangue] = useState('fr')
@@ -17,19 +18,26 @@ const Navbar = () => {
     SalonsN.push(t('Location.' + i))
   }
   const SalonsI = [t('NSI2.1')]
-
+  const [Colapse, setColapse] = useState(false)
   return (
     <header className='fixed z-50 w-screen bg-slate-800 bg-opacity-30 backdrop-blur-sm p-1 '>
-      <div className='md:flex w-full h-full items-center justify-between'>
-        <div className='w-[12%] ml-3'>
+      <div className='md:flex items-center md:justify-between'>
+        <div className='md:w-[12%] w-[40%] md:ml-3 md:mx-auto'>
           <img src={LN} alt='Logo' />
         </div>
-        <div className='md:flex hidden items-center gap-8 mr-14'>
+        <AiOutlineBars
+          className='ml-auto -mt-10 mb-4  text-[2rem] visible md:invisible text-slate-50'
+          onClick={() => setColapse((prevStat) => !prevStat)}
+        />
+        <div
+          className={`md:flex ${
+            Colapse ? 'flex' : 'hidden'
+          } items-center gap-8 mr-14`}>
           <motion.ul
             initial={{ opacity: 0, x: 200 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 200 }}
-            className='flex items-center gap-10'>
+            className='flex md:flex-row flex-col items-center mx-auto mt-10 gap-10'>
             <NavbarItem
               Name={t('Navbaritem.1')}
               Selector='/'
@@ -49,13 +57,9 @@ const Navbar = () => {
               N={Seminaires}
               I={Seminaires}
             />
-            <NavbarItem
-              Name={t('Navbaritem.4')}
-              Selector='#contact'
-              Dropdown={false}
-            />
+
             <button
-              className='uppercase text-[#FFCC00]  font-bold hover:text-[#E50914]'
+              className='uppercase text-[#FFCC00] font-bold hover:text-[#E50914]'
               onClick={() => {
                 if (Langue === 'fr') {
                   setLangue('ar')

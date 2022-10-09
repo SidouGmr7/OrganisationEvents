@@ -20,7 +20,7 @@ const NavbarItem = ({ Selector, Name, Dropdown, N, I }) => {
             onClick={() => {
               setmenu((prevStat) => !prevStat)
             }}
-            className={`flex items-center text-lg hover:scale-110 transition cursor-pointer hover:text-[#FFCC00] font-mono text-slate-50  ${
+            className={`flex items-center text-lg hover:scale-110 transition cursor-pointer hover:text-[#FFCC00] font-mono text-slate-50 ${
               (Selector === 'salons' &&
                 (Path == '/salonsnationaux' ||
                   Path == '/salonsinternational')) ||
@@ -44,7 +44,7 @@ const NavbarItem = ({ Selector, Name, Dropdown, N, I }) => {
         )}
         {/* DropMenu*/}
         {menu && (
-          <div className='w-96 backdrop-blur-lg bg-slate-600 bg-opacity-20 shadow-xl rounded-lg flex flex-col absolute top-14 -right-24 transition-all'>
+          <div className='z-20 md:w-96 w-72 backdrop-blur-lg bg-slate-600 bg-opacity-20 shadow-xl rounded-lg flex flex-col absolute md:top-14 top-8 md:-right-24 -right-28 transition-all'>
             <Link
               to={Selector + 'nationaux'}
               onClick={() => setmenu(false)}
@@ -59,7 +59,7 @@ const NavbarItem = ({ Selector, Name, Dropdown, N, I }) => {
                   <Link
                     to={Selector + 'nationaux'}
                     onClick={() => setmenu(false)}>
-                    <li className='py-2 px-5 hover:bg-slate-700 rounded-lg hover:bg-opacity-30  transition-all text-slate-100 hover:text-[#FFCC00]'>
+                    <li className='py-2 px-5 hover:bg-slate-700 rounded-lg hover:bg-opacity-30 md:text-md text-xs  transition-all text-slate-100 hover:text-[#FFCC00]'>
                       {data}
                     </li>
                   </Link>
@@ -82,7 +82,7 @@ const NavbarItem = ({ Selector, Name, Dropdown, N, I }) => {
                   <Link
                     to={Selector + 'international'}
                     onClick={() => setmenu(false)}>
-                    <li className='py-2 px-6 hover:bg-slate-700 rounded-lg hover:bg-opacity-30  transition-all text-slate-100 hover:text-[#FFCC00]'>
+                    <li className='py-2 px-6 hover:bg-slate-700 rounded-lg hover:bg-opacity-30 md:text-md text-xs transition-all text-slate-100 hover:text-[#FFCC00]'>
                       {data}
                     </li>
                   </Link>
