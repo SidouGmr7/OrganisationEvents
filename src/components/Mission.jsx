@@ -11,7 +11,7 @@ function Mission() {
   const Section = ({ titre, desc, image, style, location }) => {
     return (
       <div
-        className={`md:p-28 p-14 md:-mb-0 -mb-96 md:gap-20 md:flex ${style} md:items-center`}>
+        className={`md:p-28 p-14 md:gap-20 md:flex ${style} md:items-center`}>
         <motion.div
           animate={{ x: -200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}

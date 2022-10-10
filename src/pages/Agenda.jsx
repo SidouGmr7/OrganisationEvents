@@ -8,7 +8,7 @@ import BG2 from '../images/SalonI.JPG'
 import BG3 from '../images/SemitaireN.jpg'
 import BG4 from '../images/SemitaireI.jpg'
 
-export const Agenda = () => {
+export const Agenda = ({ bol }) => {
   const [t] = useTranslation()
   const [date, setDate] = useState(new Date())
   const [name, setName] = useState(t('agenda.1'))
@@ -50,7 +50,10 @@ export const Agenda = () => {
   }
 
   return (
-    <div className='overflow-hidden scrollbar-hide bg-slate-900 bg-opacity-80'>
+    <div
+      className={`overflow-hidden scrollbar-hide ${
+        bol ? '' : 'bg-slate-900 bg-opacity-80'
+      }`}>
       <div
         className=' relative max-w-[95%]  lg:h-screen py-20 mx-auto'
         id='agenda'>
@@ -65,7 +68,7 @@ export const Agenda = () => {
           />
           <Event Name={name} BG={BG1} />
         </div>
-        <Scroll selector='#contact' />
+        {!bol && <Scroll selector='#contact' />}
       </div>
     </div>
   )

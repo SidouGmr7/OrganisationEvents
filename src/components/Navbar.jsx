@@ -4,8 +4,11 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import LN from '../images/Logo.png'
 import { AiOutlineBars } from 'react-icons/ai'
+import { useContext } from 'react'
+import DarkMode from '../context/DarkMode'
 
 const Navbar = () => {
+  const { colapse, colapsed } = useContext(DarkMode)
   const [Langue, setLangue] = useState('fr')
   const [t, i18n] = useTranslation()
   const Seminaires = []
@@ -18,7 +21,6 @@ const Navbar = () => {
     SalonsN.push(t('Location.' + i))
   }
   const SalonsI = [t('NSI2.1')]
-  const [Colapse, setColapse] = useState(false)
   return (
     <header className='fixed z-50 w-screen bg-slate-800 bg-opacity-30 backdrop-blur-sm p-1 '>
       <div className='md:flex items-center md:justify-between'>
@@ -26,11 +28,11 @@ const Navbar = () => {
           <img src={LN} alt='Logo' />
         </div>
         <AiOutlineBars
-          className='ml-auto -mt-10  text-[2rem] flex md:hidden text-[#FFCC00]'
-          onClick={() => setColapse((prevStat) => !prevStat)}
+          className='ml-auto -mt-10  text-[2rem] flex md:hidden mr-4 text-[#FFCC00]'
+          onClick={colapsed}
         />
         <button
-          className='uppercase -mt-10 text-[2rem] flex md:hidden text-[#FFCC00] '
+          className='uppercase -mt-10 text-[2rem] flex md:hidden ml-4 text-[#FFCC00] '
           onClick={() => {
             if (Langue === 'fr') {
               setLangue('ar')
@@ -44,13 +46,13 @@ const Navbar = () => {
         </button>
         <div
           className={`md:flex ${
-            Colapse ? 'flex' : 'hidden'
+            colapse ? 'flex' : 'hidden'
           } items-center gap-8 mr-14`}>
           <motion.ul
             initial={{ opacity: 0, x: 200 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 200 }}
-            className='flex md:flex-row flex-col items-center mx-auto md:mt-0 mt-10 gap-10'>
+            className='flex md:flex-row flex-col md:items-center md:mx-auto mr-auto ml-3 md:ml-0 md:mt-0 mt-4 gap-4 md:gap-10'>
             <NavbarItem
               Name={t('Navbaritem.1')}
               Selector='/'
@@ -73,11 +75,6 @@ const Navbar = () => {
             <NavbarItem
               Name={t('Navbaritem.4')}
               Selector='#contact'
-              Dropdown={false}
-            />
-            <NavbarItem
-              Name={t('Navbaritem.5')}
-              Selector='#agenda'
               Dropdown={false}
             />
             <button

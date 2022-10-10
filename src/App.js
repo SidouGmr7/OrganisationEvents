@@ -5,12 +5,14 @@ import ContactMe from './pages/Contact'
 import Home from './pages/Home'
 import Seminaire from './pages/Seminaire'
 import Salon from './pages/Salon'
+import FlotAgenda from './components/FlotAgenda'
 
 function App() {
   return (
     <DarkModeProvider>
       <Router>
         <Navbar />
+        <FlotAgenda/>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/contact' element={<ContactMe />} />
