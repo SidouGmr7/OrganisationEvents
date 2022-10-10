@@ -10,16 +10,27 @@ const FlotAgenda = () => {
   return (
     <>
       <motion.div
+        drag
+        dragConstraints={{
+          top: -125,
+          right: 125,
+          bottom: 125,
+          left: -125,
+        }}
+        dragTransition={{ bounceStiffness: 600, bounceDamping: 20 }}
+        whileTap={{ cursor: 'grabbing' }}
         onClick={() => setShowAgenda((prevStat) => !prevStat)}
         className='fixed right-0 top-1/4 mr-4 bg-slate-800 bg-opacity-70 transition-all md:hover:opacity-100 md:opacity-60 backdrop-blur-md p-4 z-50 rounded-full'>
         <AiTwotoneCalendar className='text-[#FFCC00] text-[2rem]' />
       </motion.div>
-      <div
+      <motion.div
+        animate={{ x: 400, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
         className={`${
           ShowAgenda ? 'flex' : 'hidden'
-        } md:-mt-64 w-[100%] fixed md:p-44  z-40 `}>
+        } md:-mt-64 w-[100%] fixed md:p-44 z-40 `}>
         <Agenda bol={true} />
-      </div>
+      </motion.div>
     </>
   )
 }
