@@ -17,10 +17,10 @@ const Seminaire = () => {
 
   const Section = ({ titre, desc, img }) => {
     return (
-      <div className='flex flex-row py-10'>
+      <div className='flex md:flex-row flex-col py-10'>
         <motion.div
-          animate={{ x: -400, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          animate={{ y: -200, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           className='flex flex-col items-center space-y-5 relative transition duration-1000'>
           <img
             src={img[1]}
@@ -37,7 +37,7 @@ const Seminaire = () => {
         <motion.div
           animate={{ y: -200, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
-          className='p-10 transition duration-1000'>
+          className='p-10 scale-20 transition duration-1000'>
           <div className='relative'>
             <img
               src={img[0]}
@@ -51,8 +51,8 @@ const Seminaire = () => {
         </motion.div>
         {img[2] && (
           <motion.div
-            animate={{ x: 400, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            animate={{ y: 200, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
             className='flex flex-col items-center space-y-5 relative transition duration-1000'>
             <img
               src={img[2]}
@@ -81,7 +81,7 @@ const Seminaire = () => {
           {Path === '/seminairesinternational' ? t('titre.2') : t('titre.3')}
         </p>
       </motion.div>
-      <div className='overflow-hidden scrollbar-hide  bg-slate-900 p-20'>
+      <div className='overflow-hidden scrollbar-hide  bg-slate-900 p-20 flex flex-col gap-20'>
         <Section
           img={[Path === '/seminairesinternational' ? Dubai : Oran, BG, BG]}
           titre={[

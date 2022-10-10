@@ -13,9 +13,9 @@ const FlotAgenda = () => {
         drag
         dragConstraints={{
           top: -125,
-          right: 125,
-          bottom: 125,
-          left: -125,
+          right: 0,
+          bottom: 450,
+          left: 0,
         }}
         dragTransition={{ bounceStiffness: 600, bounceDamping: 20 }}
         whileTap={{ cursor: 'grabbing' }}
