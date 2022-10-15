@@ -18,11 +18,11 @@ export default function ContactMe() {
           }`}>
           {t('about.contactp')}
         </h1>
-        <Button
-          Name={t('about.contact')}
-          Selector=''
-          BGC='  hover:bg-[#FFCC00] transition text-[#FFCC00] hover:text-white border-2 border border-[#FFCC00] text-white'
-        />
+        <a
+          className=' hover:bg-[#FFCC00] hover:text-white border-2  border-[#FFCC00] text-white hover:bg-opacity-90 md:scale-100 md:hover:scale-110 transition font-semibold py-2 px-5 rounded-full'
+          href='mailto:bnhmdanrhal@gamil.com'>
+          {t('about.contact')}
+        </a>
       </motion.div>
     </div>
   )

@@ -7,11 +7,12 @@ import BG1 from '../images/SalonN.jpg'
 import BG2 from '../images/SalonI.JPG'
 import BG3 from '../images/SemitaireN.jpg'
 import BG4 from '../images/SemitaireI.jpg'
+import Switch from '../data/event'
 
 export const Agenda = ({ bol }) => {
   const [t] = useTranslation()
   const [date, setDate] = useState(new Date())
-  const [name, setName] = useState(t('agenda.1'))
+  const [name, setName] = useState(t('agenda.0'))
   const [image, setImage] = useState(BG1)
 
   const Event = ({ Name, BG }) => {
@@ -19,7 +20,7 @@ export const Agenda = ({ bol }) => {
       <div className='md:w-[50%] md:mt-20'>
         <div className='relative'>
           <img src={BG} alt='event' className=' rounded-full' />
-          <p className='absolute top-1/2 right-1/4 md:p-5 p-2 md:text-2xl text-md max-w-md text-[#FFCC00] bg-slate-600 bg-opacity-80 backdrop-blur-xs rounded-full  capitalize first-letter:text-[#E50914]'>
+          <p className='absolute top-1/2 right-1/4 md:p-5 p-2 md:text-xl lg:text-2xl  text-md max-w-md text-[#FFCC00] bg-slate-600 bg-opacity-80 backdrop-blur-xs rounded-full  capitalize first-letter:text-[#E50914]'>
             {Name}
           </p>
         </div>
@@ -32,21 +33,11 @@ export const Agenda = ({ bol }) => {
     const DateSelect =
       date.getDate().toString() +
       '/' +
-      date.getMonth().toString() +
+      (date.getMonth() + 1).toString() +
       '/' +
       date.getFullYear().toString()
-    switch (DateSelect) {
-      case '19/9/2022':
-        return setName(t('titre.2'))
-      case '20/9/2022':
-        return setName(t('titre.3'))
-      case '21/9/2022':
-        return setName(t('titre.4'))
-      case '22/9/2022':
-        return setName(t('titre.5'))
-      default:
-        return setName(t('agenda.2'))
-    }
+    console.log(DateSelect)
+    setName(<Switch DateSelect={DateSelect} />)
   }
 
   return (

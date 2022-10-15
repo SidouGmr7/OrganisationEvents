@@ -2,21 +2,21 @@
   "TitreHome": {
     "1": "Organisation",
     "2": "des",
-    "3": "Séminaires",
+    "3": "Evenements",
     "4": "et",
-    "5": "salons"
+    "5": "Salons"
   },
   "titre": {
-    "2": "Les Séminaires internationaux ",
-    "3": "Les Séminaires nationaux ",
+    "2": "Les Evenements internationaux ",
+    "3": "Les Evenements nationaux ",
     "4": "Les Salons internationaux ",
     "5": "Les Salons nationaux "
   },
-  "DescriptionHome": "Organisation de Séminaires et salons internationaux et nationaux",
+  "DescriptionHome": "Organisation des Evenements et salons internationaux et nationaux",
   "Navbaritem": {
     "1": "Accueil",
     "2": "Salons",
-    "3": "Séminaires",
+    "3": "Evenements",
     "4": "Contact",
     "5": "Agenda"
   },
@@ -31,7 +31,7 @@
     }
   },
   "mission": {
-    "titre": "Les Séminaires et Les Salons"
+    "titre": "Les Evenements et Les Salons"
   },
   "NSI1": {
     "1": "Investissement Immobilier",
@@ -74,15 +74,18 @@
     "14": "Tipaza",
     "15": "Bouira",
     "16": "Médéa",
-    "17": "Blida"
+    "17": "Blida",
+    "18": "Mostaganem",
+    "19": "Hotel Hyatt Regency",
+    "20": "Hotel Le Méridien"
   },
   "HomeSection": {
     "1": {
-      "titre": "Séminaires internationaux",
+      "titre": "Evenements internationaux",
       "desc": "Plusieurs conférences internationales sur les investissements, le tourisme et les arts du marketing dans diverses régions du monde (Dubaï, Suisse, Allemagne, UK)"
     },
     "2": {
-      "titre": "Séminaires nationaux",
+      "titre": "Evenements nationaux",
       "desc": "Plusieurs conférences nationales sur les investissements, le tourisme et les arts du marketing dans les différents états d'Algérie (Oran, Alger)"
     },
     "3": {
@@ -95,23 +98,17 @@
     }
   },
   "service": {
-    "titre": "خدماتنا",
-    "1": {
-      "titre": "",
-      "desc": ""
-    },
-    "2": {
-      "titre": "",
-      "desc": ""
-    },
-    "3": {
-      "titre": "",
-      "desc": ""
-    }
+    "titre": "Nos Services",
+    "1": "Hôtellerie et Tourisme",
+    "2": "Location de Matériel Hôtelier",
+    "3": "Gardiennage et Sécurité des Expositions",
+    "4": "Services de Restauration et Hospitalité",
+    "5": "Location de Voiture"
   },
-  "agenda" : {
-    "1" : "Selectionner une Date",
-    "2" : "Evenement Indisponible",
-    "3" : ""
+  "agenda": {
+    "0": "Selectionner une Date",
+    "00": "Evenement Indisponible",
+    "event": "Evenement",
+    "salon": "Salon"
   }
 }
