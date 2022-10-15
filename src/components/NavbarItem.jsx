@@ -42,7 +42,7 @@ const NavbarItem = ({ Selector, Name, Dropdown, N, I, Colapse }) => {
             <MdOutlineArrowDropDown />
             {/* DropMenu*/}
             {menu && (
-              <div className='z-20 md:w-96 w-72 backdrop-blur-lg bg-slate-600 hover:scale-95 bg-opacity-20 shadow-xl rounded-lg flex flex-col absolute md:top-14 -top-14  left-24 md:-left-32 transition-all'>
+              <div className='z-40 md:w-96 w-72 backdrop-blur-lg bg-slate-600 hover:scale-95 bg-opacity-20 shadow-xl rounded-lg flex flex-col absolute md:top-14 top-12  md:-left-32 transition-all'>
                 <Link
                   to={Selector + 'nationaux'}
                   onClick={() => setmenu(false)}

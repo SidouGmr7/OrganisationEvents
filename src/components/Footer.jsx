@@ -32,7 +32,7 @@ function Footer() {
             initial={{ x: -200 }}
             whileInView={{ x: 0, scale: 1 }}
             className='text-white text-justify md:gap-4 gap-12  transition duration-1000 flex flex-row'>
-            <a href='' className='hover:scale-105 transition-all duration-300'>
+            <a href='https://twitter.com/SPACAPMER' className='hover:scale-105 transition-all duration-300'>
               <FaTwitter
                 className='md:text-[3rem] text-[2rem]'
                 color='#1DA1F2'
