@@ -24,7 +24,7 @@ const FlotAgenda = () => {
         <AiTwotoneCalendar className='text-[#FFCC00] text-[2rem]' />
       </motion.div>
       <motion.div
-        animate={{ x: 400, opacity: 0 }}
+        animate={{ x: 100, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         className={`${
           ShowAgenda ? 'flex' : 'hidden'

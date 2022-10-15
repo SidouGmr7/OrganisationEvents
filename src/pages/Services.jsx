@@ -21,7 +21,7 @@ const Services = () => {
         </p>
         <div className='grid lg:grid-cols-3 grid-cols-2 justify-center pt-10 gap-8 '>
           <motion.div
-            animate={{ x: 200, opacity: 0 }}
+            animate={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             className={style}>
             <FaHotel className='text-4xl text-[#FFCC00]' />
@@ -30,7 +30,7 @@ const Services = () => {
             </header>
           </motion.div>
           <motion.div
-            animate={{ x: 200, opacity: 0 }}
+            animate={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             className={style}>
             <MdHotel className='text-4xl text-[#FFCC00]' />
@@ -39,7 +39,7 @@ const Services = () => {
             </header>
           </motion.div>
           <motion.div
-            animate={{ x: 200, opacity: 0 }}
+            animate={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             className={style}>
             <GiStaticGuard className='text-4xl text-[#FFCC00]' />
@@ -48,7 +48,7 @@ const Services = () => {
             </header>
           </motion.div>
           <motion.div
-            animate={{ x: 200, opacity: 0 }}
+            animate={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             className={style}>
             <MdOutlineFastfood className='text-4xl text-[#FFCC00]' />
@@ -58,7 +58,7 @@ const Services = () => {
           </motion.div>
 
           <motion.div
-            animate={{ x: 200, opacity: 0 }}
+            animate={{ x: 100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             className={style}>
             <AiFillCar className='text-4xl text-[#FFCC00]' />

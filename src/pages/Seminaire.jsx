@@ -27,9 +27,7 @@ const Seminaire = () => {
             alt=''
             className='h-[50%] w-[80%] object-cover rounded-t-full'
           />
-          <header className='absolute text-2xl text-[#E50914]  backdrop-blur-sm bg-slate-600 bg-opacity-20 rounded-full p-3 top-1/4 left-1/2 text-center -translate-x-1/2 -translate-y-1/2'>
-            {titre[1]}
-          </header>
+         
           <p className='text-[#FFCC00] text-lg text-center backdrop-blur-sm bg-slate-600 bg-opacity-20 rounded-full p-4'>
             {desc[0]}
           </p>
@@ -59,9 +57,7 @@ const Seminaire = () => {
               alt=''
               className='h-[50%] w-[80%] object-cover rounded-t-full'
             />
-            <header className='absolute text-2xl text-[#E50914] backdrop-blur-sm bg-slate-600 bg-opacity-20 rounded-full p-3 top-1/4 left-1/2 text-center -translate-x-1/2 -translate-y-1/2'>
-              {titre[2]}
-            </header>
+          
             <p className='text-[#FFCC00] text-lg text-center backdrop-blur-sm bg-slate-600 bg-opacity-20 rounded-full p-4'>
               {desc[1]}
             </p>
@@ -102,7 +98,7 @@ const Seminaire = () => {
             t('NSI1.3'),
             t('NSI1.4'),
           ]}
-          desc={[t('PSI1.1'), t('PSI1.2')]}
+          desc={[t('PSI1.3'), t('PSI1.4')]}
         />
         <Section
           img={[Path === '/seminairesinternational' ? UK : Oran, BG]}
@@ -112,7 +108,7 @@ const Seminaire = () => {
               : t('Location.5'),
             t('NSI1.5'),
           ]}
-          desc={[t('PSI1.1'), t('PSI1.2')]}
+          desc={[t('PSI1.5')]}
         />
         <Section
           img={[Path === '/seminairesinternational' ? Germany : Alger, BG, BG]}
@@ -123,7 +119,7 @@ const Seminaire = () => {
             t('NSI1.6'),
             t('NSI1.7'),
           ]}
-          desc={[t('PSI1.1'), t('PSI1.2')]}
+          desc={[t('PSI1.6'), t('PSI1.7')]}
         />
       </div>
       <ContactMe />

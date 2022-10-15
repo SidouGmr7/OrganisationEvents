@@ -19,8 +19,8 @@ function Footer() {
   const [t] = useTranslation()
   return (
     <footer className='overflow-hidden  bg-slate-900'>
-      <div className='my-10 flex md:flex-row flex-col items-center relative max-w-[85%] md:p-4 md:mx-auto gap-10'>
-        <div className=' flex flex-col md:w-[50%] w-[87%] items-center space-y-6 gap-2'>
+      <div className='my-10 flex md:flex-row flex-col items-center relative justify-center w-[75%] md:w-[90%]   md:p-4 mx-auto gap-10'>
+        <div className='flex flex-col md:w-[50%] items-center space-y-6 gap-2'>
           <motion.img
             initial={{ x: 200 }}
             whileInView={{ x: 0, scale: 1 }}
@@ -28,10 +28,10 @@ function Footer() {
             alt='Logo'
             className='w-40 transition duration-1000'
           />
-          <motion.p
+          <motion.div
             initial={{ x: -200 }}
             whileInView={{ x: 0, scale: 1 }}
-            className='text-white text-justify md:gap-4 gap-16  transition duration-1000 flex flex-row'>
+            className='text-white text-justify md:gap-4 gap-12  transition duration-1000 flex flex-row'>
             <a href='' className='hover:scale-105 transition-all duration-300'>
               <FaTwitter
                 className='md:text-[3rem] text-[2rem]'
@@ -55,14 +55,14 @@ function Footer() {
               />
             </a>
             <a
-              href='mailto:0664784130'
+              href='tel:0664784130'
               className='hover:scale-105 transition-all duration-300'>
               <FaWhatsapp
                 className='md:text-[3rem] text-[2rem]'
                 color='#25d366'
               />
             </a>
-          </motion.p>
+          </motion.div>
         </div>
         <motion.div
           initial={{ x: 200 }}
@@ -105,15 +105,21 @@ function Footer() {
           </p>
           <div className='text-xl m-4 rounded-full hover:text-white transition duration-1000  flex gap-4'>
             <FaPhoneAlt color='#FFCC00' />
-            <p className='text-white text-sm'>+213 (0)775310312</p>
+            <a href='tel:0775310312' className='text-white text-sm'>
+              +213 (0)775310312
+            </a>
           </div>
           <div className='text-xl m-4 rounded-full hover:text-white transition duration-1000  flex gap-4'>
             <FaPhoneAlt color='#FFCC00' />
-            <p className='text-white text-sm'>+213 (0)658444412</p>
+            <a href='tel:0658444412' className='text-white text-sm'>
+              +213 (0)658444412
+            </a>
           </div>
           <div className='text-xl m-4 rounded-full hover:text-white transition duration-1000  flex gap-4'>
             <GiRotaryPhone color='#FFCC00' />
-            <p className='text-white text-sm'>+213 (0)24775855</p>
+            <a href='tel:024775855' className='text-white text-sm'>
+              +213 (0)24775855
+            </a>
           </div>
 
           <div className='text-xl m-4 rounded-full hover:text-white transition duration-1000  flex gap-4'>
@@ -169,7 +175,7 @@ function Footer() {
         </p>
         <p className='text-zinc-400 mx-auto'>
           Réalisation & création par :{' '}
-          <a href='https://portfolio-gmr.vercel.app/' className='font-bold'>
+          <a href='https://portfolio-gmr.vercel.app/' className='font-bold text-md'>
             Goumiri Ali
           </a>
         </p>

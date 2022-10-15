@@ -8,6 +8,7 @@ import BG from '../images/bg2.jpg'
 import Dubai from '../images/dubai.jpg'
 import Suisse from '../images/suisse.jpg'
 import Germany from '../images/Germany.jpg'
+import Artisanat from '../images/Artisanat.jpeg'
 import UK from '../images/UK.jpg'
 import Oran from '../images/Oran.jpg'
 import Alger from '../images/Alger.jpg'
@@ -50,9 +51,9 @@ const Salon = () => {
             whileInView={{ x: 0, opacity: 1 }}
             className='items-center space-y-5 md:w-[50%] w-[90%]  relative transition duration-1000 mt-10'>
             <img
-              src={BG}
+              src={Artisanat}
               alt=''
-              className='h-[50%] w-full object-cover rounded-t-full'
+              className='h-[60%] -mt-10 w-full object-cover rounded-t-full'
               />
             <header className='absolute text-2xl text-[#E50914] backdrop-blur-sm bg-slate-600 bg-opacity-20 rounded-full p-3 top-1/4 left-1/2 text-center -translate-x-1/2 -translate-y-1/2'>
               {Path === '/salonsnationaux' ? t('NSI2.2') : t('NSI2.1')}
@@ -70,15 +71,16 @@ const Salon = () => {
           
           </div>
           <div className='grid grid-cols-4 p-4 gap-4 items-center'>
-          <p className={`left-[5%] bottom-[15%] ${style}`}>{t('Location.14')}</p>
-          <p className={`left-[5%] bottom-[25%] ${style}`}>{t('Location.15')}</p>
-          <p className={`left-[12%] bottom-[15%] ${style}`}>{t('Location.10')}</p>
-          <p className={`left-[12%] bottom-[25%] ${style}`}>{t('Location.9')}</p>
-          <p className={`right-[5%] bottom-[15%] ${style}`}>{t('Location.12')}</p>
-          <p className={`right-[5%] bottom-[25%] ${style}`}>{t('Location.11')}</p>         
-          <p className={`right-[14.2%] bottom-[15%] ${style}`}>{t('Location.7')}</p>         
-          <p className={`right-[12%] bottom-[5%] ${style}`}>{t('Location.8')}</p>
-          <p className={`right-[5%] bottom-[5%] ${style}`}>{t('Location.16')}</p>
+          <p className={`left-[5%] bottom-[25%] ${style}`}>{t('Location.11')}</p>
+          <p className={`left-[18%] bottom-[25%] ${style}`}>{t('Location.15')}</p>
+          <p className={`left-[25%] bottom-[25%] ${style}`}>{t('Location.10')}</p>
+          <p className={`left-[32%] bottom-[25%] ${style}`}>{t('Location.9')}</p>
+          <p className={`right-[5%] bottom-[25%] ${style}`}>{t('Location.12')}</p>
+          <p className={`right-[18%] bottom-[25%] ${style}`}>{t('Location.14')}</p>         
+          <p className={`right-[25%] bottom-[25%] ${style}`}>{t('Location.7')}</p>         
+          <p className={`right-[32%] bottom-[25%] ${style}`}>{t('Location.8')}</p>
+          <p className={`right-[40%] bottom-[25%] ${style}`}>{t('Location.16')}</p>
+          <p className={`right-[48.5%] bottom-[25%] ${style}`}>{t('Location.18')}</p>
           </div>
           </>
           ) : (
