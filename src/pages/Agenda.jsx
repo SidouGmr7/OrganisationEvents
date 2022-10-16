@@ -4,16 +4,13 @@ import Calendar from 'react-calendar'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import BG1 from '../images/SalonN.jpg'
-import BG2 from '../images/SalonI.JPG'
-import BG3 from '../images/SemitaireN.jpg'
-import BG4 from '../images/SemitaireI.jpg'
 import Switch from '../data/event'
+import { events } from '../data/event'
 
 export const Agenda = ({ bol }) => {
   const [t] = useTranslation()
   const [date, setDate] = useState(new Date())
   const [name, setName] = useState(t('agenda.0'))
-  const [image, setImage] = useState(BG1)
 
   const Event = ({ Name, BG }) => {
     return (
@@ -40,6 +37,20 @@ export const Agenda = ({ bol }) => {
     setName(<Switch DateSelect={DateSelect} />)
   }
 
+  function StyleDate(date) {
+    const Selected =
+      date.getDate().toString() +
+      '/' +
+      (date.getMonth() + 1).toString() +
+      '/' +
+      date.getFullYear().toString()
+    for (let i = 0; i <= events.length; i++) {
+      if (Selected === events[i]) {
+        return true
+      }
+    }
+  }
+
   return (
     <div
       className={`overflow-hidden scrollbar-hide ${
@@ -56,6 +67,9 @@ export const Agenda = ({ bol }) => {
             onChange={onChange}
             value={date}
             className='text-[#FFCC00] md:text-2xl items-center flex md:leading-6 leading-4 flex-col justify-center font-bold bg-slate-900 bg-opacity-80 backdrop-blur-sm md:p-6 p-2 w-[50%] rounded-[10%]'
+            tileClassName={({ date, view }) =>
+              view === 'month' && StyleDate(date) && 'text-[#E50914]'
+            }
           />
           <Event Name={name} BG={BG1} />
         </div>
