@@ -4,8 +4,7 @@ import { MdOutlineArrowDropDown } from 'react-icons/md'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { useLocation } from 'react-router-dom'
-import { useContext } from 'react'
-import DarkMode from '../context/DarkMode'
+
 
 const NavbarItem = ({ Selector, Name, Dropdown, N, I, Colapse }) => {
   const [menu, setmenu] = useState(false)
@@ -30,11 +29,11 @@ const NavbarItem = ({ Selector, Name, Dropdown, N, I, Colapse }) => {
             }}
             className={`flex items-center md:text-lg text-md p-4 hover:scale-110 transition cursor-pointer hover:text-slate-100 font-mono text-[#FFCC00] ${
               (Selector === 'salons' &&
-                (Path == '/salonsnationaux' ||
-                  Path == '/salonsinternational')) ||
+                (Path === '/salonsnationaux' ||
+                  Path === '/salonsinternational')) ||
               (Selector === 'seminaires' &&
-                (Path == '/seminairesnationaux' ||
-                  Path == '/seminairesinternational'))
+                (Path === '/seminairesnationaux' ||
+                  Path === '/seminairesinternational'))
                 ? underline
                 : ''
             }`}>
@@ -94,7 +93,7 @@ const NavbarItem = ({ Selector, Name, Dropdown, N, I, Colapse }) => {
           <Link
             to={Selector}
             className={`flex items-center md:text-lg text-md text-[#FFCC00] hover:scale-110 transition cursor-pointer hover:text-slate-100 font-mono  ${
-              Selector === '/' && Path == '/' ? underline : ''
+              Selector === '/' && Path === '/' ? underline : ''
             }`}>
             {Name}
           </Link>

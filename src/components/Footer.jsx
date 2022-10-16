@@ -32,7 +32,9 @@ function Footer() {
             initial={{ x: -200 }}
             whileInView={{ x: 0, scale: 1 }}
             className='text-white text-justify md:gap-4 gap-12  transition duration-1000 flex flex-row'>
-            <a href='https://twitter.com/SPACAPMER' className='hover:scale-105 transition-all duration-300'>
+            <a
+              href='https://twitter.com/SPACAPMER'
+              className='hover:scale-105 transition-all duration-300'>
               <FaTwitter
                 className='md:text-[3rem] text-[2rem]'
                 color='#1DA1F2'
@@ -131,7 +133,6 @@ function Footer() {
           <div className='text-xl m-4 rounded-full hover:text-white transition duration-1000  flex gap-4'>
             <FaMapMarkedAlt color='#FFCC00' />
             <p className='text-white text-sm'>
-              {' '}
               35024 Ouled Bonoua Cap Djinet Boumerdes
             </p>
           </div>
@@ -139,16 +140,17 @@ function Footer() {
         <motion.div
           initial={{ x: 200 }}
           whileInView={{ x: 0, scale: 1 }}
-          className='md:w-[50%] items-center transition duration-1000'>
+          className=' items-center transition duration-1000'>
           <p className='text-[#FFCC00] text-2xl mb-10 font-bold relative before:absolute before:rounded-lg before:w-20 before:h-1 before:-bottom-1 before:bg-[#FFCC00]'>
-            Bureaux de Représentation
+            Bureaux de Liaison
           </p>
           <div className='text-xl m-4 rounded-full hover:text-white transition duration-1000  flex gap-4'>
             <HiOutlineOfficeBuilding color='#FFCC00' />
             <a
               href='https://maps.app.goo.gl/S7Bet3Mrckgju4H16?g_st=iw'
               className='text-white text-sm'>
-              Centre Commercial Bab Ezzouar (Regus)
+              Lots 43-44-45-46 de l'ilot No 8, Quartier d'Affaires d'Alger -
+              Commune de Bab-Ezzouar, Algiers
             </a>
           </div>
           <div className='text-xl m-4 rounded-full hover:text-white transition duration-1000  flex gap-4'>
@@ -156,7 +158,7 @@ function Footer() {
             <a
               href='https://maps.app.goo.gl/jXWohprPpbCxMtcF7?g_st=iw'
               className='text-white text-sm'>
-              Centre Commercial Dubai (Regus)
+              Regus - Aéroport de Dubaï - Rue Al Quds - Dubaï - EAU
             </a>
           </div>
           <div className='text-xl m-4 rounded-full hover:text-white transition duration-1000  flex gap-4'>
@@ -164,21 +166,24 @@ function Footer() {
             <a
               href='https://maps.app.goo.gl/Ch6L6oGhCZ81pW8m8?g_st=iw'
               className='text-white text-sm'>
-              Centre Commercial Luxembourg (Regus)
+              Regus - Luxembourg, Airoport 5 Heienhaff 2nd floor, Niederanven,
+              L-1736
             </a>
           </div>
         </motion.div>
       </div>
       <div className=' bg-zinc-900 p-3 flex  md:flex-row text-xs flex-col justify-between'>
-        <p className='text-zinc-400 mb-2 md:mb-0 mx-auto'>
+        <p className='text-zinc-400 mb-2 text-[0.6rem] md:mb-0 mx-auto'>
           Copyright @ 2022 Boumerdes, DZ, inc All rights reserved .
         </p>
-        <p className='text-zinc-400 mx-auto'>
+        <div className='text-zinc-400 mx-auto'>
           Réalisation & création par :{' '}
-          <a href='https://portfolio-gmr.vercel.app/' className='font-bold text-md'>
+          <a
+            href='https://portfolio-gmr.vercel.app/'
+            className='font-bold text-md'>
             Goumiri Ali
           </a>
-        </p>
+        </div>
       </div>
     </footer>
   )
