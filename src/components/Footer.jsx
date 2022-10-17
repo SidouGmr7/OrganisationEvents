@@ -57,7 +57,7 @@ function Footer() {
               />
             </a>
             <a
-              href='tel:0664784130'
+              href='tel:0775310312'
               className='hover:scale-105 transition-all duration-300'>
               <FaWhatsapp
                 className='md:text-[3rem] text-[2rem]'
