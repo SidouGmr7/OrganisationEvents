@@ -12,7 +12,7 @@ function App() {
     <DarkModeProvider>
       <Router>
         <Navbar />
-        <FlotAgenda/>
+        <FlotAgenda />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/contact' element={<ContactMe />} />
