@@ -1,5 +1,5 @@
 import Scroll from '../components/Scroll'
-import { AiFillAliwangwang, AiFillCar } from 'react-icons/ai'
+import { AiFillCar } from 'react-icons/ai'
 import { GiStaticGuard } from 'react-icons/gi'
 import { FaHotel } from 'react-icons/fa'
 import { MdOutlineFastfood, MdHotel } from 'react-icons/md'

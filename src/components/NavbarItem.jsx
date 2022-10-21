@@ -10,6 +10,7 @@ const NavbarItem = ({ Selector, Name, Dropdown, N, I, Colapse }) => {
   const [menu, setmenu] = useState(false)
   const [t] = useTranslation()
   const Path = useLocation().pathname
+  
 
   const underline =
     'before:absolute before:rounded-lg before:w-[40%] before:h-[13%] before:-bottom-0 before:bg-slate-200 hover:before:text-slate-100 text-slate-100'

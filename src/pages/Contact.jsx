@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import Button from './../components/Button'
 import { useTranslation } from 'react-i18next'
 
 export default function ContactMe() {

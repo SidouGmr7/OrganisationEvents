@@ -12,14 +12,14 @@ export default function Switch({ DateSelect }) {
 
     case '17/11/2022': return t('agenda.salon') + ': ' + t('Location.16')
     case '18/11/2022': return t('agenda.salon') + ': ' + t('Location.16')
-    case '19/11/2022': return t('agenda.salon') + ': ' + t('Location.19')
+    case '19/11/2022': return t('agenda.salon') + ': ' + t('Location.16')
     case '24/11/2022': return t('agenda.salon') + ': ' + t('Location.9')
     case '25/11/2022': return t('agenda.salon') + ': ' + t('Location.9')
     case '26/11/2022': return t('agenda.salon') + ': ' + t('Location.9')
 
-    case '15/12/2022': return t('agenda.salon') + ': ' + t('Location.17')
-    case '16/12/2022': return t('agenda.salon') + ': ' + t('Location.17')
-    case '17/12/2022': return t('agenda.salon') + ': ' + t('Location.17')
+    case '15/12/2022': return t('agenda.salon') + ': ' + t('Location.7')
+    case '16/12/2022': return t('agenda.salon') + ': ' + t('Location.7')
+    case '17/12/2022': return t('agenda.salon') + ': ' + t('Location.7')
     case '22/12/2022': return t('agenda.salon') + ': ' + t('Location.10')
     case '23/12/2022': return t('agenda.salon') + ': ' + t('Location.10')
     case '24/12/2022': return t('agenda.salon') + ': ' + t('Location.10')
@@ -57,7 +57,7 @@ export default function Switch({ DateSelect }) {
     case '28/4/2023': return t('agenda.salon') + ': ' + t('Location.6')
     case '29/4/2023': return t('agenda.salon') + ': ' + t('Location.6')
     
-    case '5/5/2023': return t('agenda.event') + ': ' + t('Location.6') + '(' + t('Location.19')+')'
+    case '4/5/2023': return t('agenda.event') + ': ' + t('Location.6') + '(' + t('Location.19')+')'
     case '11/5/2023': return t('agenda.event') + ': ' + t('Location.5') + '(' + t('Location.20')+')'
     case '18/5/2023': return t('agenda.salon') + ': ' + t('Location.11')
     case '19/5/2023': return t('agenda.salon') + ': ' + t('Location.11')
@@ -79,18 +79,18 @@ export default function Switch({ DateSelect }) {
     case '12/9/2023': return t('agenda.salon') + ' et ' +  t('agenda.event') + ': ' + t('Location.2')
     case '13/9/2023': return t('agenda.salon') + ': ' + t('Location.2')
 
-    case '13/10/2023': return t('agenda.salon') + ': ' + t('Location.2')
-    case '14/10/2023': return t('agenda.salon') + ': ' + t('Location.2')
-    case '15/10/2023': return t('agenda.salon') + ': ' + t('Location.2')
-    case '4/10/2023': return t('agenda.event') + ': ' + t('Location.2')
+    case '4/10/2022': return t('agenda.event') + ': ' + t('Location.2')
+    case '13/10/2022': return t('agenda.salon') + ': ' + t('Location.2')
+    case '14/10/2022': return t('agenda.salon') + ': ' + t('Location.2')
+    case '15/10/2022': return t('agenda.salon') + ': ' + t('Location.2')
 
-    case '10/11/2023': return t('agenda.salon') + ': ' + t('Location.3')
-    case '11/11/2023': return t('agenda.salon') + ' et ' +  t('agenda.event') + ': ' + t('Location.3')
-    case '12/11/2023': return t('agenda.salon') + ': ' + t('Location.3')
+    case '10/11/2022': return t('agenda.salon') + ': ' + t('Location.3')
+    case '11/11/2022': return t('agenda.salon') + ' et ' +  t('agenda.event') + ': ' + t('Location.3')
+    case '12/11/2022': return t('agenda.salon') + ': ' + t('Location.3')
 
-    case '1/12/2023': return t('agenda.salon') + ': ' + t('Location.4')
-    case '2/12/2023': return t('agenda.salon') + ' et ' +  t('agenda.event') + ': ' + t('Location.4')
-    case '3/12/2023': return t('agenda.salon') + ': ' + t('Location.4')
+    case '1/12/2022': return t('agenda.salon') + ': ' + t('Location.4')
+    case '2/12/2022': return t('agenda.salon') + ' et ' +  t('agenda.event') + ': ' + t('Location.4')
+    case '3/12/2022': return t('agenda.salon') + ': ' + t('Location.4')
 
     default:
       return t('agenda.00')
@@ -146,7 +146,7 @@ export const events = [
   '27/4/2023',
   '28/4/2023',
   '29/4/2023',
-  '5/5/2023',
+  '4/5/2023',
   '11/5/2023',
   '18/5/2023',
   '19/5/2023',
@@ -165,14 +165,14 @@ export const events = [
   '10/9/2023',
   '12/9/2023',
   '13/9/2023',
-  '13/10/2023',
-  '14/10/2023',
-  '15/10/2023',
-  '4/10/2023',
-  '10/11/2023',
-  '11/11/2023',
-  '12/11/2023',
-  '1/12/2023',
-  '2/12/2023',
-  '3/12/2023',
+  '13/10/2022',
+  '14/10/2022',
+  '15/10/2022',
+  '4/10/2022',
+  '10/11/2022',
+  '11/11/2022',
+  '12/11/2022',
+  '1/12/2022',
+  '2/12/2022',
+  '3/12/2022',
 ]

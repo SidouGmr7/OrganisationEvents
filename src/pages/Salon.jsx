@@ -4,7 +4,6 @@ import Footer from '../components/Footer'
 import ContactMe from './Contact'
 import { useLocation } from 'react-router-dom'
 
-import BG from '../images/bg2.jpg'
 import Dubai from '../images/dubai.jpg'
 import Suisse from '../images/suisse.jpg'
 import Germany from '../images/Germany.jpg'
