@@ -113,8 +113,8 @@ function Footer() {
           </div>
           <div className='text-xl m-4 rounded-full hover:text-white transition duration-1000  flex gap-4'>
             <FaPhoneAlt color='#FFCC00' />
-            <a href='tel:0658444412' className='text-white text-sm'>
-              +213 (0)658444412
+            <a href='tel:0770627617' className='text-white text-sm'>
+              +213 (0)770627617
             </a>
           </div>
           <div className='text-xl m-4 rounded-full hover:text-white transition duration-1000  flex gap-4'>
